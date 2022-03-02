@@ -1,0 +1,214 @@
+@import "componant"
+
+body
+    background-color: #fff
+
+    .allBody
+        width: 600px
+        height: 339px
+        background-color: transparent
+        border: 5px solid $hair
+        margin: 70px auto
+
+        .face
+            width: 137px
+            height: 146px
+            background-color: $skin
+            margin: 39px auto
+            border-radius: 0% 100% 46% 54% / 0% 0% 100% 100%
+            border: 1px solid #744201
+            position: relative
+            z-index: 4
+
+            .eyebrow
+                width: 48px
+                height: 21px
+                background-color: transparent
+                position: relative
+                top: 19px
+                left: 14px
+                border-radius: 53%
+                border-top: 8px solid $eyebrow
+
+                + .eyebrow
+                    transform: translate(30px)
+                    top: -10px
+                    left: 44px
+
+            .eye
+                width: 34px
+                height: 37px
+                background-color: #fff
+                position: relative
+                left: 24px
+                top: -21px
+                border-radius: 54% 100% 41% 100% / 10% 10% 47% 100%
+                transform: rotate(180deg) rotateY(180deg)
+                .pupil
+                    position: relative
+                    width: 22px
+                    height: 22px
+                    background-color: $eye
+                    border-radius: 50%
+                    left: 7px
+                    top: 3px
+                    &::before
+                        content: ""
+                        width: 3px
+                        height: 3px
+                        position: absolute
+                        background-color: #fff
+                        border-radius: 50%
+                        top: 13px
+                        left: 6px
+                        z-index: 99999
+                        opacity: 0.8
+
+                    &::after
+                        content: ""
+                        width: 11px
+                        height: 11px
+                        position: absolute
+                        background-color: #000
+                        border-radius: 50%
+                        top: 5px
+                        left: 5px
+
+                + .eye
+                    top: -58px
+                    left: 80px
+                    transform: rotateX(180deg) rotateY(180deg)
+                    .pupil
+                        &::before
+                            left: 11px
+            .cheek
+                position: relative
+                width: 47px
+                height: 9px
+                background-color: #de5d83
+                top: -56px
+                left: 22px
+                border-radius: 4px
+                opacity: 0.3
+                + .cheek
+                    left: 69px
+                    top: -65px
+
+            .nose
+                width: 22px
+                height: 25px
+                background-color: transparent
+                position: relative
+                top: -77px
+                left: 58px
+                border-radius: 50%
+                border-top: 2px solid #5e3927
+                transform: rotate(45deg)
+                box-shadow: inset 0px 7px 4px -2px #c99696
+
+            .mouth
+                width: 52px
+                height: 16px
+                background-color: transparent
+                position: relative
+                top: -76px
+                left: 43px
+                border-radius: 50%
+                border-bottom: 1px solid
+                transform: rotate(5deg)
+
+        .neck
+            width: 48px
+            height: 40px
+            background-color: #e0ac69
+            position: relative
+            left: 46.2%
+            top: -53px
+            border: 1px solid #744201
+            border-bottom: none
+            &::before
+                content: " "
+                width: 71px
+                height: 40px
+                background-color: #e0ac69
+                position: absolute
+                top: 28px
+                left: -12px
+                z-index: -55555555
+                border-radius: 0 0 50% 50%
+
+        .body
+            width: 182px
+            height: 78px
+            background-color: #101010
+            position: relative
+            top: -65px
+            left: 210px
+            z-index: -5555555555
+            border-radius: 58px
+
+        .hairRight
+            width: 138px
+            height: 111px
+            background-color: #000000
+            position: absolute
+            top: 87px
+            left: 44.8%
+            border-radius: 50%
+            border: 1px solid #ffffff
+        .hairTop
+            width: 210px
+            height: 33px
+            background-color: #000000
+            position: relative
+            top: 49px
+            left: 159px
+            border-radius: 28px 28px 0 28px
+            z-index: 99999999
+            border: 1px solid #fff
+            border-top: none
+            border-right: none
+        .ear
+            width: 30px
+            height: 52px
+            position: absolute
+            background-color: #e0ac69
+            left: 43.7%
+            top: 187px
+            border-radius: 14px
+            transform: rotate(-21deg)
+            border: 1px solid
+            &::before
+                content: ""
+                width: 18px
+                height: 35px
+                background-color: transparent
+                position: absolute
+                left: 6px
+                top: 8px
+                border-radius: 20px
+                border-top: 1px solid
+                border-bottom: 1px solid
+            &::after
+                content: ""
+                width: 10px
+                height: 10px
+                background-color: transparent
+                position: absolute
+                left: 13px
+                top: 22px
+                border-radius: 20px
+                border: 1px solid
+                opacity: 0.5
+
+            + .ear
+                left: 54%
+                transform: rotate(21deg)
+                &::after
+                    left: 6px
+
+        img
+            width: 82px
+            position: absolute
+            top: 310px
+            left: 47%
